@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.crespro.myamaltutor">
+
+    <application
+        android:name=".MutabaahApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logoamal"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash.DalilActivity"
+            android:label="@string/title_activity_dalil"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyAmalMenu.TahapSatuActivity"
+            android:label="@string/title_activity_tahap_satu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyAmalMenu.TahapDuaActivity"
+            android:label="@string/title_activity_tahap_dua"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyAmalMenu.TahapTigaActivity"
+            android:label="@string/title_activity_tahap_tiga"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SenaraiMinggu.KelebihanAmal"
+            android:label="@string/title_activity_tazkirah"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Kelebihan.TazkirahSatu"
+            android:label="@string/title_activity_tazkirah_satu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Kelebihan.TazkirahDua"
+            android:label="@string/title_activity_tazkirah_dua"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Kira2.SenaraiAmal1"
+            android:label="@string/title_activity_senarai_amal1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Kira2.SenaraiAmal2"
+            android:label="@string/title_activity_senarai_amal2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Kira2.SenaraiAmal3"
+            android:label="@string/title_activity_senarai_amal3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SenaraiMinggu.SenaraiMinggu1"
+            android:label="@string/title_activity_senarai_minggu1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Adapter.ResultAdapter"
+            android:label="@string/title_activity_result_adapter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Adapter.ResultAdapter2"
+            android:label="@string/title_activity_result_adapter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Adapter.ResultAdapter3"
+            android:label="@string/title_activity_result_adapter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Score.ScoreMingguanActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Score.ScoreMingguan2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Score.ScoreMingguan3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Kira2.SenaraiAmal1b"
+            android:label="@string/title_activity_senarai_amal1b"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Kira2.SenaraiAmal2b"
+            android:label="@string/title_activity_senarai_amal2b"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Kira2.SenaraiAmal3b"
+            android:label="@string/title_activity_senarai_amal3b"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SenaraiMinggu.SenaraiMinggu2"
+            android:label="@string/title_activity_senarai_minggu2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SenaraiMinggu.SenaraiMinggu3"
+            android:label="@string/title_activity_senarai_minggu3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainMenu.LamanIlmu"
+            android:label="@string/title_activity_iluv_islam"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pengenalan.Pengenalan1"
+            android:label="@string/title_activity_pengenalan1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pengenalan.Pengenalan2"
+            android:label="@string/title_activity_pengenalan2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pengenalan.Pengenalan3"
+            android:label="@string/title_activity_pengenalan3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pengenalan.Pengenalan4"
+            android:label="@string/title_activity_pengenalan4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainMenu.MyAmalMenu"
+            android:label="@string/title_activity_my_amal_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainMenu.PanduanAmalanMenu"
+            android:label="@string/title_activity_panduan_amalan_menu"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

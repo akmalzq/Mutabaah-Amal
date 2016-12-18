@@ -1,0 +1,44 @@
+<resources>
+
+    <string name="app_name">My Amal</string>
+    //nama aplikasi bila dah install
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dalil">DalilActivity</string>
+    <string name="title_activity_menu">Main Menu</string>
+    <string name="title_activity_tahap_satu">Tahap Satu</string>
+    <string name="title_activity_tahap_dua">Tahap Dua</string>
+    <string name="title_activity_tahap_tiga">Tahap Tiga</string>
+    <string name="title_activity_tazkirah">Tazkirah Corner</string>
+    <string name="title_activity_tazkirah_satu">Tazkirah Iman</string>
+    <string name="title_activity_tazkirah_dua">Tazkirah Amal</string>
+    <string name="tahap_1">TAHAP 1</string>
+    <string name="score2">Score Mingguan</string>
+    <string name="score3">Score Mingguan</string>
+    <string name="ili">ILUVISLAM</string>
+    <string name="week">Minggu</string>
+    <string name="week2">Minggu</string>
+    <string name="week3">Minggu</string>
+    <string name="title_activity_kira_tahap_satu">KiraTahapSatu</string>
+    <string name="title_activity_senarai_amal1">SenaraiAmal1</string>
+    <string name="title_activity_senarai_amal_satu">SenaraiAmalSatu</string>
+    <string name="title_activity_senarai_amal2">SenaraiAmal2</string>
+    <string name="title_activity_senarai_amal3">SenaraiAmal3</string>
+    <string name="title_activity_senarai_result1">SenaraiResult1</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_senarai_minggu1">SenaraiMinggu1</string>
+    <string name="title_activity_papar_result1">PaparResult1</string>
+    <string name="title_activity_result_adapter">ResultAdapter</string>
+    <string name="title_activity_main_db">MainDB</string>
+    <string name="title_activity_senarai_amal1b">SenaraiAmal1b</string>
+    <string name="title_activity_senarai_amal2b">SenaraiAmal2b</string>
+    <string name="title_activity_senarai_amal3b">SenaraiAmal3b</string>
+    <string name="title_activity_senarai_minggu2">SenaraiMinggu2</string>
+    <string name="title_activity_senarai_minggu3">SenaraiMinggu3</string>
+    <string name="title_activity_iluv_islam">ILuvIslam</string>
+    <string name="title_activity_pengenalan1">Pengenalan1</string>
+    <string name="title_activity_pengenalan2">Pengenalan2</string>
+    <string name="title_activity_pengenalan3">Pengenalan3</string>
+    <string name="title_activity_pengenalan4">Pengenalan4</string>
+    <string name="title_activity_my_amal_menu">MyAmalMenu</string>
+    <string name="title_activity_panduan_amalan_menu">PanduanAmalanMenu</string>
+</resources>

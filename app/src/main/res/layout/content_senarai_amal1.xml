@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/minggu"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Kira2.SenaraiAmal1"
+    tools:showIn="@layout/activity_senarai_amal1">
+
+    <CheckBox
+        android:id="@+id/checkBox_jemaah1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="146dp"
+        android:checked="false"
+        android:text="Solat Subuh Berjemaah  (3 x Seminggu)" />
+
+    <CheckBox
+        android:id="@+id/checkBox_quran1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox_jemaah1"
+        android:layout_alignStart="@+id/checkBox_jemaah1"
+        android:layout_below="@+id/checkBox_jemaah1"
+        android:checked="false"
+        android:text="Bacaan Quran  (1 m/s x Sehari)" />
+
+    <CheckBox
+        android:id="@+id/checkBox_zikir1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox_quran1"
+        android:layout_alignStart="@+id/checkBox_quran1"
+        android:layout_below="@+id/checkBox_quran1"
+        android:checked="false"
+        android:text="Zikir Fatimah  (1 x Sehari)" />
+
+    <CheckBox
+        android:id="@+id/checkBox_dhuha1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox_zikir1"
+        android:layout_alignStart="@+id/checkBox_zikir1"
+        android:layout_below="@+id/checkBox_zikir1"
+        android:checked="false"
+        android:text="Solat Sunat Dhuha  (1 x Seminggu)" />
+
+    <CheckBox
+        android:id="@+id/checkBox_istighfar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox_dhuha1"
+        android:layout_alignStart="@+id/checkBox_dhuha1"
+        android:layout_below="@+id/checkBox_dhuha1"
+        android:checked="false"
+        android:text="Istighfar  (15 x Sehari) " />
+
+    <CheckBox
+        android:id="@+id/checkBox_belajar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox_istighfar1"
+        android:layout_alignStart="@+id/checkBox_istighfar1"
+        android:layout_below="@+id/checkBox_istighfar1"
+        android:checked="false"
+        android:text="Belajar  (1 jam x Sehari)" />
+
+    <CheckBox
+        android:id="@+id/checkBox_riadah1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox_belajar1"
+        android:layout_alignStart="@+id/checkBox_belajar1"
+        android:layout_below="@+id/checkBox_belajar1"
+        android:checked="false"
+        android:text="Riadah  (1 jam x Seminggu)" />
+
+    <Button
+        android:id="@+id/total1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox_riadah1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:text="Kira Prestasi" />
+
+</RelativeLayout>
