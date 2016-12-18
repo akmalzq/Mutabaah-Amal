@@ -17,13 +17,10 @@ public class TahapSatuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tahap_satu);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
     }
 
     public void onClickKiraAmal1(View view) {
         Intent intent = new Intent(TahapSatuActivity.this, SenaraiMinggu1.class);
         startActivity(intent);
-
     }
 }
