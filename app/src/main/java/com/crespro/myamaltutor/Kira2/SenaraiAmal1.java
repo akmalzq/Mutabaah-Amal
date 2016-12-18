@@ -89,6 +89,7 @@ public class SenaraiAmal1 extends Activity {
         total1.setText(String.format("Prestasi Amal Anda Minggu ini adalah  : %.2f", +sum / 7 * 100));
 
         Amal amal = new Amal();
+        amal.setId(1);
         amal.setLevel(1);
         amal.setWeek(1); // 1 is for week one
         amal.setScore(sum / 7 * 100); // score value

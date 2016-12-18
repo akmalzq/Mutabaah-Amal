@@ -31,8 +31,8 @@ public class ScoreMingguanAdapter3 extends RecyclerView.Adapter<ScoreMingguanAda
     @Override
     public void onBindViewHolder(ScoreViewHolder holder, int position) {
 
-        holder.mWeek3.setText("Week : " + mAmalList3.get(position).getWeek3());
-        holder.mScore3.setText("Score : " + mAmalList3.get(position).getScore3() + "");
+        holder.mWeek3.setText("Week : " + mAmalList3.get(position).getWeek() + "");
+        holder.mScore3.setText("Score : " + mAmalList3.get(position).getScore() + "");
     }
 
     @Override

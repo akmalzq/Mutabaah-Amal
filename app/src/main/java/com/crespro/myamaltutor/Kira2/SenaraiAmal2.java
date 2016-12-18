@@ -99,6 +99,7 @@ public class SenaraiAmal2 extends AppCompatActivity {
         mTotal2Btn.setText(String.format("Prestasi Amal Anda Minggu ini adalah  : %.2f", +sum / 10 * 100));
 
         Amal amal2 = new Amal();
+        amal2.setId(3);
         amal2.setLevel(2); // 2 is for level 2
         amal2.setWeek(1); // 1 is for week 1g
         amal2.setScore(sum / 10 * 100); // score value

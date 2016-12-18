@@ -4,9 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 
-import com.crespro.myamaltutor.Adapter.ScoreMingguanAdapter2;
 import com.crespro.myamaltutor.Adapter.ScoreMingguanAdapter3;
 import com.crespro.myamaltutor.R;
 import com.crespro.myamaltutor.database.DatabaseService;
@@ -35,14 +33,13 @@ public class ScoreMingguan3Activity extends Activity {
         mRecyclerView3 = (RecyclerView) findViewById(R.id.recycler3);
         mRecyclerView3.setLayoutManager(new LinearLayoutManager(this));
 
-        RealmResults<Amal> amalList3 = DatabaseService.getInstance().getAmals(mRealm3);
+        RealmResults<Amal> amalList3 = DatabaseService.getInstance().getAmalsByLevel(mRealm3, 3);
         RealmList<Amal> amals3 = new RealmList<>();
         for (Amal amal3 : amalList3) {
             amals3.add(amal3);
         }
 
-        Log.d("AAA", "score size : " + amals3.size());
-        mAdapter3 = new ScoreMingguanAdapter3 (amals3);
+        mAdapter3 = new ScoreMingguanAdapter3(amals3);
         mAdapter3.notifyDataSetChanged();
         mRecyclerView3.setAdapter(mAdapter3);
     }

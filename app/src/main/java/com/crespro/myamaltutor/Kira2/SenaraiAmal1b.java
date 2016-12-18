@@ -3,7 +3,6 @@ package com.crespro.myamaltutor.Kira2;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -14,8 +13,6 @@ import com.crespro.myamaltutor.database.DatabaseService;
 import com.crespro.myamaltutor.model.Amal;
 
 import io.realm.Realm;
-import io.realm.RealmList;
-import io.realm.RealmResults;
 
 public class SenaraiAmal1b extends Activity {
 
@@ -88,54 +85,13 @@ public class SenaraiAmal1b extends Activity {
         total1.setText(String.format("Prestasi Amal Anda Minggu ini adalah  : %.2f", +sum / 7 * 100));
 
         Amal amal = new Amal();
+        amal.setId(2);
         amal.setLevel(1);
         amal.setWeek(2); // 1 is for week one
         amal.setScore(sum / 7 * 100); // score value
         DatabaseService.getInstance().copyOrUpdateAmal(mRealm, amal); // save amal into database
 
-        // to get back the amal from database
-        getAmal();
-        getAmalByWeek();
-        getAmals();
-
         mScoreMingguanBtn.setVisibility(View.VISIBLE);
-    }
-
-    /**
-     * Get amal from first row of the database
-     */
-    private void getAmal() {
-        Amal amal = DatabaseService.getInstance().getAmal(mRealm);
-        Log.d("AMAL LOG", "MINGGU: " + amal.getWeek());
-        Log.d("AMAL LOG", "SKOR: " + amal.getScore());
-    }
-
-    /**
-     * Get amal by week. You can change the week based on you need and get the result (score)
-     * that belongs to that particular week
-     */
-    private void getAmalByWeek() {
-        int week = 1;
-        Amal amal = DatabaseService.getInstance().getAmalByWeek(mRealm, week);
-        Log.d("AMAL LOG", "MINGGU: " + amal.getWeek());
-        Log.d("AMAL LOG", "SKOR: " + amal.getScore());
-
-    }
-
-    /**
-     * Get all amals from database. It will iterate based on you amal database size.
-     */
-    private void getAmals() {
-        RealmResults<Amal> amalList = DatabaseService.getInstance().getAmals(mRealm);
-        RealmList<Amal> amals = new RealmList<>();
-        for (Amal amal : amalList) {
-            amals.add(amal);
-        }
-
-        for (int i = 1; i < amals.size(); i++) {
-            Log.d("AMAL LOG", "MINGGU: " + amals.get(i).getWeek());
-            Log.d("AMAL LOG", "SKOR: %.2f" + amals.get(i).getScore());
-        }
     }
 
     @Override

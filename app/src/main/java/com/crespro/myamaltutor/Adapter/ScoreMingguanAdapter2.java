@@ -17,7 +17,7 @@ import io.realm.RealmList;
 
 public class ScoreMingguanAdapter2 extends RecyclerView.Adapter<ScoreMingguanAdapter2.ScoreViewHolder> {
 
-     private RealmList<Amal> mAmalList2;
+    private RealmList<Amal> mAmalList2;
 
     public ScoreMingguanAdapter2(RealmList<Amal> mAmalList2) {
         this.mAmalList2 = mAmalList2;
@@ -32,8 +32,8 @@ public class ScoreMingguanAdapter2 extends RecyclerView.Adapter<ScoreMingguanAda
     @Override
     public void onBindViewHolder(ScoreViewHolder holder, int position) {
 
-        holder.mWeek2.setText("Week : " + mAmalList2.get(position).getWeek2());
-        holder.mScore2.setText("Score : " + mAmalList2.get(position).getScore2() + "");
+        holder.mWeek2.setText("Week : " + mAmalList2.get(position).getWeek() + "");
+        holder.mScore2.setText("Score : " + mAmalList2.get(position).getScore() + "");
     }
 
     @Override

@@ -9,9 +9,18 @@ import io.realm.annotations.PrimaryKey;
 
 public class Amal extends RealmObject {
     @PrimaryKey
+    private int id;
+    private int level;
     private int week;
     private float score;
-    private int level;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public int getWeek() {
         return week;

@@ -35,5 +35,4 @@ public class SenaraiMinggu3 extends AppCompatActivity {
         startActivity(intent);
 
     }
-
 }

@@ -23,8 +23,5 @@ public class TahapTigaActivity extends AppCompatActivity {
     public void onClickKiraAmal3(View view) {
         Intent intent = new Intent(TahapTigaActivity.this, SenaraiMinggu3.class);
         startActivity(intent);
-
-
     }
-
 }
