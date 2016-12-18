@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -28,26 +27,23 @@ public class ScoreMingguanActivity extends Activity {
     private Realm mRealm;
     private ScoreMingguanAdapter mAdapter;
     private RecyclerView mRecyclerView;
-    ImageButton home;
+    private ImageButton mHomeBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_mingguan);
 
-
         mRealm = Realm.getDefaultInstance();
-
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        RealmResults<Amal> amalList = DatabaseService.getInstance().getAmals(mRealm);
+        RealmResults<Amal> amalList = DatabaseService.getInstance().getAmalsByLevel(mRealm, 1); // 1 is for level 1
         RealmList<Amal> amals = new RealmList<>();
         for (Amal amal : amalList) {
             amals.add(amal);
         }
 
-        Log.d("AAA", "score size : " + amals.size());
         mAdapter = new ScoreMingguanAdapter(amals);
         mAdapter.notifyDataSetChanged();
         mRecyclerView.setAdapter(mAdapter);

@@ -42,6 +42,11 @@ public class DatabaseService {
         return realm.where(Amal.class).equalTo("week", week).findFirst();
     }
 
+    // get all amals by week
+    public RealmResults<Amal> getAmalsByLevel(final Realm realm, final int level) {
+        return realm.where(Amal.class).equalTo("level", level).findAll();
+    }
+
     // get all amal
     public RealmResults<Amal> getAmals(final Realm realm) {
         return realm.where(Amal.class).findAll();
