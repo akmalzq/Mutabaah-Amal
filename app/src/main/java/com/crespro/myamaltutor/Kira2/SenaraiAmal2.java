@@ -19,13 +19,21 @@ import io.realm.RealmResults;
 
 public class SenaraiAmal2 extends AppCompatActivity {
 
-    CheckBox checkBox_jemaah2, checkBox_quran2, checkBox_zikir2, checkBox_dhuha2, checkBox_istighfar2,
-            checkBox_qiamullail2, checkBox_puasa2, checkBox_mathurat2, checkBox_belajar2, checkBox_riadah2;
-    Button total2;
+    private CheckBox mCheckBoxJemaah2;
+    private CheckBox mCheckBoxQuran2;
+    private CheckBox mCheckBoxZikir2;
+    private CheckBox mCheckBoxDhuha2;
+    private CheckBox mCheckBoxIstighfar2;
+    private CheckBox mCheckBoxQiamullail2;
+    private CheckBox mCheckBoxPuasa2;
+    private CheckBox mCheckBoxMathurat2;
+    private CheckBox mCheckBoxBelajar2;
+    private CheckBox mCheckBoxRiadah2;
+    private Button mTotal2Btn;
     private Button mScoreMingguan2Btn;
     private Realm mRealm2;
 
-    int sum = 0;
+    private int sum = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -35,25 +43,25 @@ public class SenaraiAmal2 extends AppCompatActivity {
         mRealm2 = Realm.getDefaultInstance();
 
         setContentView(R.layout.activity_senarai_amal2);
-        checkBox_jemaah2 = (CheckBox) findViewById(R.id.checkBox_jemaah2);
+        mCheckBoxJemaah2 = (CheckBox) findViewById(R.id.checkBox_jemaah2);
 
-        checkBox_quran2 = (CheckBox) findViewById(R.id.checkBox_quran2);
+        mCheckBoxQuran2 = (CheckBox) findViewById(R.id.checkBox_quran2);
 
-        checkBox_zikir2 = (CheckBox) findViewById(R.id.checkBox_zikir2);
+        mCheckBoxZikir2 = (CheckBox) findViewById(R.id.checkBox_zikir2);
 
-        checkBox_dhuha2 = (CheckBox) findViewById(R.id.checkBox_dhuha2);
+        mCheckBoxDhuha2 = (CheckBox) findViewById(R.id.checkBox_dhuha2);
 
-        checkBox_istighfar2 = (CheckBox) findViewById(R.id.checkBox_istighfar2);
+        mCheckBoxIstighfar2 = (CheckBox) findViewById(R.id.checkBox_istighfar2);
 
-        checkBox_qiamullail2 = (CheckBox) findViewById(R.id.checkBox_qiamullail2);
+        mCheckBoxQiamullail2 = (CheckBox) findViewById(R.id.checkBox_qiamullail2);
 
-        checkBox_puasa2 = (CheckBox) findViewById(R.id.checkBox_puasa2);
+        mCheckBoxPuasa2 = (CheckBox) findViewById(R.id.checkBox_puasa2);
 
-        checkBox_mathurat2 = (CheckBox) findViewById(R.id.checkBox_mathurat2);
+        mCheckBoxMathurat2 = (CheckBox) findViewById(R.id.checkBox_mathurat2);
 
-        checkBox_belajar2 = (CheckBox) findViewById(R.id.checkBox_belajar2);
+        mCheckBoxBelajar2 = (CheckBox) findViewById(R.id.checkBox_belajar2);
 
-        checkBox_riadah2 = (CheckBox) findViewById(R.id.checkBox_riadah2);
+        mCheckBoxRiadah2 = (CheckBox) findViewById(R.id.checkBox_riadah2);
 
         mScoreMingguan2Btn = (Button) findViewById(R.id.score_mingguan2_btn);
 
@@ -64,10 +72,10 @@ public class SenaraiAmal2 extends AppCompatActivity {
             }
         });
 
-        total2 = (Button) findViewById(R.id.total2);
+        mTotal2Btn = (Button) findViewById(R.id.total2);
 
 
-        total2.setOnClickListener(new View.OnClickListener() {
+        mTotal2Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 makeCalculations();
@@ -96,7 +104,7 @@ public class SenaraiAmal2 extends AppCompatActivity {
         if (((CheckBox) findViewById(R.id.checkBox_riadah2)).isChecked()) sum += 1;
 
 
-        total2.setText(String.format("Prestasi Amal Anda Minggu ini adalah  : %.2f", +sum / 10 * 100));
+        mTotal2Btn.setText(String.format("Prestasi Amal Anda Minggu ini adalah  : %.2f", +sum / 10 * 100));
 
         Amal amal2 = new Amal();
         amal2.setLevel2(1);
