@@ -19,7 +19,13 @@ import io.realm.RealmResults;
 
 public class SenaraiAmal1b extends Activity {
 
-    private CheckBox checkBox_jemaah1, checkBox_quran1, checkBox_zikir1, checkBox_dhuha1, checkBox_istighfar1, checkBox_belajar1, checkBox_riadah1;
+    private CheckBox mCheckBoxJemaah1;
+    private CheckBox mCheckBoxQuran1;
+    private CheckBox mCheckBoxZikir1;
+    private CheckBox mCheckBoxDhuha1;
+    private CheckBox mCheckBoxIstighfar1;
+    private CheckBox mCheckBoxBelajar1;
+    private CheckBox mCheckBoxRiadah1;
     private Button total1;
     private Button mScoreMingguanBtn;
     private Realm mRealm;
@@ -35,19 +41,19 @@ public class SenaraiAmal1b extends Activity {
         mRealm = Realm.getDefaultInstance();
 
         setContentView(R.layout.activity_senarai_amal1);
-        checkBox_jemaah1 = (CheckBox) findViewById(R.id.checkBox_jemaah1);
+        mCheckBoxJemaah1 = (CheckBox) findViewById(R.id.checkBox_jemaah1);
 
-        checkBox_quran1 = (CheckBox) findViewById(R.id.checkBox_quran1);
+        mCheckBoxQuran1 = (CheckBox) findViewById(R.id.checkBox_quran1);
 
-        checkBox_zikir1 = (CheckBox) findViewById(R.id.checkBox_zikir1);
+        mCheckBoxZikir1 = (CheckBox) findViewById(R.id.checkBox_zikir1);
 
-        checkBox_dhuha1 = (CheckBox) findViewById(R.id.checkBox_dhuha1);
+        mCheckBoxDhuha1 = (CheckBox) findViewById(R.id.checkBox_dhuha1);
 
-        checkBox_istighfar1 = (CheckBox) findViewById(R.id.checkBox_istighfar1);
+        mCheckBoxIstighfar1 = (CheckBox) findViewById(R.id.checkBox_istighfar1);
 
-        checkBox_belajar1 = (CheckBox) findViewById(R.id.checkBox_belajar1);
+        mCheckBoxBelajar1 = (CheckBox) findViewById(R.id.checkBox_belajar1);
 
-        checkBox_riadah1 = (CheckBox) findViewById(R.id.checkBox_riadah1);
+        mCheckBoxRiadah1 = (CheckBox) findViewById(R.id.checkBox_riadah1);
 
         mScoreMingguanBtn = (Button) findViewById(R.id.score_mingguan_btn);
 
